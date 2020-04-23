@@ -1,0 +1,13 @@
+<h1>WORD COUNT AND Frequency</h1>
+<a href="{% url 'home' %}">Back to homepage</a>
+<h4>Text</h4>
+{{fulltext}}
+<br>
+<h4>Total words</h4>
+{{wordcount}}
+<br>
+<h4>Word Frequency In order of highest Occurence</h4>
+{% for word,value in sortlist %}
+{{word}} = {{value}}
+<br>
+{% endfor %}
